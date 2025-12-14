@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Surat Keluar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+    .container {
+      width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Form Surat Keluar</h2>
+
+    <form name="surat-keluar" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="surat-keluar">
+
+      <label>Nomor Surat</label>
+      <input type="text" name="nomor_surat" required>
+
+      <label>Tanggal Kirim</label>
+      <input type="date" name="tanggal_kirim" required>
+
+      <label>Tujuan Surat</label>
+      <input type="text" name="tujuan" required>
+
+      <label>Perihal</label>
+      <textarea name="perihal" rows="4" required></textarea>
+
+      <button type="submit">Simpan Surat</button>
+    </form>
+  </div>
+
+</body>
+</html>
