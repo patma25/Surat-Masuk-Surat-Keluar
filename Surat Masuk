@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Surat Masuk</title>
+</head>
+<body>
+  <h2>Form Surat Masuk</h2>
+
+  <form name="surat-masuk" method="POST" data-netlify="true">
+    <input type="text" name="nomor_surat" placeholder="Nomor Surat"><br><br>
+    <input type="date" name="tanggal_terima"><br><br>
+    <input type="text" name="pengirim" placeholder="Pengirim"><br><br>
+    <textarea name="perihal" placeholder="Perihal"></textarea><br><br>
+    <button type="submit">Simpan</button>
+  </form>
+</body>
+</html>
